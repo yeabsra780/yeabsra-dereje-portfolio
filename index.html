@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="theme-color" content="#ffffff">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Yeabsra Dereje Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><span class="highlight"> Y </span>D </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon" id="themeIcon"></i>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="typing-text">Hi, I'm <span class="highlight">Yeabsra Dereje</span></h1>
+                <p>Creative Video Editor</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">Creative Showcase</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+                <div class="social-icons">
+<a href="https://t.me/yeabsradereje">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.14-.26.26-.534.26l.213-3.053 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.534-.196 1.006.128.832.941z"/>
+  </svg>
+</a> <br>
+                    <a href="mailto:yeabsradereje@gmail.com"><i class="fas fa-envelope"></i></a><br>
+                </div>
+            </div>
+            <div class="hero-image">
+            <div class="circle-container">
+                <!-- Play/Pause Button -->
+                <button id="orbitControl" class="orbit-control" aria-label="Pause animation">
+                    <i class="fas fa-pause"></i>
+                </button>
+                
+                <div class="circle">
+                    <!-- Professional Video Tools -->
+                    <div class="orbiting-tool" style="--i:1" data-tooltip="Adobe Premiere Pro">
+                        <i class="fa-solid fa-film"></i>
+                    </div>
+                    <div class="orbiting-tool" style="--i:2" data-tooltip="Adobe After Effects">
+                       <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <div class="orbiting-tool" style="--i:3" data-tooltip="Cap Cut">
+                      <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                     <div class="orbiting-tool" style="--i:4" data-tooltip="Adobe PhotoShop">
+                    <i class="fa-solid fa-camera-retro"></i>
+                    </div>
+                    <!-- Center Logo -->
+                    <div class="center-logo">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/profile.jpg" alt="Yeabsra Dereje">
+                </div>
+                <div class="about-text">
+                    <h3>🎬 Creative Video <span class="highlight">Editor</span></h3>
+                    <p>I'm a passionate and skilled video editor with a creative mindset and a sharp eye for detail. I specialize in crafting engaging, high-quality videos that grab attention and keep viewers hooked. Whether it's catching mistakes, filling in the gaps, or cutting out off-scenes, I take pride in delivering polished and professional results.
+
+I’ve also developed the ability to build scenes entirely from scratch even when clients don’t provide any footage. From YouTube and TikTok videos to Instagram reels, ads, vlogs, memes, personal content, and event recaps, I bring any idea to life with visual storytelling that’s trendy, captivating, and competitive.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+   <section id="skills" class="skills">
+    <div class="container">
+        <h2 class="section-title">My Creative Toolkit</h2>
+        <div class="skills-content">
+            <div class="skill-category">
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-film"></i>
+                            <div class="pulse-effect"></div>
+                        </div>
+                        <div class="skill-details">
+                            <h4>Adobe Premiere Pro</h4>
+                            <p class="skill-description">Professional video editing with cinematic precision</p>
+                            <div class="skill-tags">
+                                <span>Timeline Editing</span>
+                                <span>Color Grading</span>
+                                <span>Audio Mixing</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <div class="pulse-effect"></div>
+                        </div>
+                        <div class="skill-details">
+                            <h4>After Effects</h4>
+                            <p class="skill-description">Motion graphics and visual effects wizardry</p>
+                            <div class="skill-tags">
+                                <span>Animations</span>
+                                <span>Compositing</span>
+                                <span>Visual Effects</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <div class="pulse-effect"></div>
+                        </div>
+                        <div class="skill-details">
+                            <h4>CapCut</h4>
+                            <p class="skill-description">Trend-focused mobile video creation</p>
+                            <div class="skill-tags">
+                                <span>Quick Edits</span>
+                                <span>Social Media</span>
+                                <span>Templates</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-camera-retro"></i>
+                            <div class="pulse-effect"></div>
+                        </div>
+                        <div class="skill-details">
+                            <h4>Photoshop</h4>
+                            <p class="skill-description">Digital image manipulation mastery</p>
+                            <div class="skill-tags">
+                                <span>Retouching</span>
+                                <span>Compositing</span>
+                                <span>Digital Art</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+    <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="video">Video Editing</button>
+            <button class="filter-btn" data-filter="graphics">Graphics design</button>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" data-category="video">
+                <div class="project-img">
+                    <a href="https://drive.google.com/file/d/1EWiYRWcJq-Mjnp_Be-ToQBq9cIbPQfuY/view?usp=drive_link">
+                        <img src="assets/images/first-Cover.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    <div class="project-tech">
+                        <span>Adobe Premiere-Pro</span>
+                        <span>Adobe After Effect</span>
+                        <span>Cap-Cut</span>
+                    </div>
+                </div>
+            </div>
+        <div class="project-card" data-category="video">
+                <div class="project-img">
+                    <a href="https://drive.google.com/file/d/14GinZKNEAQvJSM9Yqs8C8s2H19OuhUly/view?usp=drive_link">
+                        <img src="assets/images/Screenshot 2025-08-05 192406.png" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    <div class="project-tech">
+                        <span>Adobe Premiere-Pro</span>
+                        <span>Adobe After Effect</span>
+                        <span>Cap-Cut</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="video">
+                <div class="project-img">
+                    <a href="https://drive.google.com/file/d/1GjGAdXlH72BprroG4jrgld_KSeA7ZoJQ/view?usp=drive_link">
+                        <img src="assets/images/Screenshot 2025-08-05 192500.png" alt="">
+                    </a>
+                </div>
+                 <div class="project-content">
+                    <div class="project-tech">
+                        <span>Adobe Premiere-Pro</span>
+                        <span>Adobe After Effect</span>
+                        <span>Cap-Cut</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="video">
+                <div class="project-img">
+                    <a href="https://drive.google.com/file/d/130lhbzgl0lYWY9oZziRnf7Cbe8IwA6m0/view?usp=drive_link">
+                        <img src="assets/images/Screenshot 2025-08-05 192544.png" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    <div class="project-tech">
+                        <span>Adobe Premiere-Pro</span>
+                        <span>Adobe After Effect</span>
+                        <span>Cap-Cut</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="video">
+                <div class="project-img">
+                    <a href="https://drive.google.com/file/d/1lVmbY0_HTWie4HqFq6XsVeKIdeXTK9E1/view?usp=drive_link">
+                        <img src="assets/images/advt 1.2-Cover.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    <div class="project-tech">
+                        <span>Adobe Premiere-Pro</span>
+                        <span>Adobe After Effect</span>
+                        <span>Cap-Cut</span>
+                    </div>
+                </div>
+            </div>
+              <div class="project-card" data-category="video">
+                <div class="project-img">
+                    <a href="https://drive.google.com/file/d/1W14QHYdAOn_SPnE1S7PWXMx3UT_Jc5UH/view?usp=sharing">
+                        <img src="assets/images/blood donation-Cover.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    <div class="project-tech">
+                        <span>Adobe Premiere-Pro</span>
+                        <span>Adobe After Effect</span>
+                        <span>Cap-Cut</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="video">
+                <div class="project-img">
+                    <a href="https://drive.google.com/file/d/1uVT3TOLcHtq4OXTFPYFm_B10HUtDCjbX/view?usp=sharing">
+                        <img src="assets/images/week 1 cover.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    <div class="project-tech">
+                        <span>Adobe Premiere-Pro</span>
+                        <span>Adobe After Effect</span>
+                        <span>Cap-Cut</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="graphics">
+                <div class="project-img">
+                    <a href="assets/images/Artboard 1 copy.png">
+                        <img src="assets/images/Artboard 1 copy.png" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    
+                    <div class="project-tech">
+                        <span>Adobe Photoshop</span>
+                        <span>Adobe Illustrator</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="graphics">
+                <div class="project-img">
+                    <a href="assets/images/Artboard 1.png">
+                        <img src="assets/images/Artboard 1.png" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+             
+                    <div class="project-tech">
+                        <span>Adobe Photoshop</span>
+                        <span>Adobe Illustrator</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="graphics">
+                <div class="project-img">
+                    <a href="assets/images/chuchu.png">
+                        <img src="assets/images/chuchu.png" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    
+                    <div class="project-tech">
+                        <span>Adobe Photoshop</span>
+                        <span>Adobe Illustrator</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="graphics">
+                <div class="project-img">
+                    <a href="assets/images/cosmetics.jpg">
+                        <img src="assets/images/cosmetics.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    
+                    <div class="project-tech">
+                        <span>Adobe Photoshop</span>
+                        <span>Adobe Illustrator</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="graphics">
+                <div class="project-img">
+                    <a href="assets/images/EVENT FLYER.jpg">
+                        <img src="assets/images/EVENT FLYER.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    
+                    <div class="project-tech">
+                        <span>Adobe Photoshop</span>
+                        <span>Adobe Illustrator</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="graphics">
+                <div class="project-img">
+                    <a href="assets/images/flag issue fixed sample.png">
+                        <img src="assets/images/flag issue fixed sample.png" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    
+                    <div class="project-tech">
+                        <span>Adobe Photoshop</span>
+                        <span>Adobe Illustrator</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="graphics">
+                <div class="project-img">
+                    <a href="assets/images/food menu.jpg">
+                        <img src="assets/images/food menu.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    
+                    <div class="project-tech">
+                        <span>Adobe Photoshop</span>
+                        <span>Adobe Illustrator</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="graphics">
+                <div class="project-img">
+                    <a href="assets/images/king's coming soon.jpg">
+                        <img src="assets/images/king's coming soon.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    
+                    <div class="project-tech">
+                        <span>Adobe Photoshop</span>
+                        <span>Adobe Illustrator</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="graphics">
+                <div class="project-img">
+                    <a href="assets/images/linkedin poster.jpg">
+                        <img src="assets/images/linkedin poster.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    
+                    <div class="project-tech">
+                        <span>Adobe Photoshop</span>
+                        <span>Adobe Illustrator</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="graphics">
+                <div class="project-img">
+                    <a href="assets/images/photo_2025-07-28_13-35-32.jpg">
+                        <img src="assets/images/photo_2025-07-28_13-35-32.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    
+                    <div class="project-tech">
+                        <span>Adobe Photoshop</span>
+                        <span>Adobe Illustrator</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="graphics">
+                <div class="project-img">
+                    <a href="assets/images/photo_2025-07-28_13-35-52.jpg">
+                        <img src="assets/images/photo_2025-07-28_13-35-52.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    
+                    <div class="project-tech">
+                        <span>Adobe Photoshop</span>
+                        <span>Adobe Illustrator</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="graphics">
+                <div class="project-img">
+                    <a href="assets/images/podcast.jpg">
+                        <img src="assets/images/podcast.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    
+                    <div class="project-tech">
+                        <span>Adobe Photoshop</span>
+                        <span>Adobe Illustrator</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="graphics">
+                <div class="project-img">
+                    <a href="assets/images/ticket 1.jpg">
+                        <img src="assets/images/ticket 1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    
+                    <div class="project-tech">
+                        <span>Adobe Photoshop</span>
+                        <span>Adobe Illustrator</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-category="graphics">
+                <div class="project-img">
+                    <a href="assets/images/Untitled-1-Recovered.jpg">
+                        <img src="assets/images/Untitled-1-Recovered.jpg" alt="">
+                    </a>
+                </div>
+                <div class="project-content">
+                    
+                    <div class="project-tech">
+                        <span>Adobe Photoshop</span>
+                        <span>Adobe Illustrator</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>yeabdereje90@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+251926720408/+251704121462</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-location-dot"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Addis Ababa, Ethiopia</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        
+                        <a href="https://t.me/yeabsradereje">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.14-.26.26-.534.26l.213-3.053 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.534-.196 1.006.128.832.941z"/>
+  </svg>
+</a>
+                        <a href="mailto:yeabdereje90@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><span class="highlight"> Y </span>D </h2>
+                </div>
+                <p>© 2025 Yeabsra Dereje. All Rights Reserved.</p>
+                <div class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <a href="#top" class="back-to-top" aria-label="Go back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+        </div>
+    </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
