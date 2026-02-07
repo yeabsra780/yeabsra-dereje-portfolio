@@ -649,46 +649,26 @@ nav ul li a:hover::after {
     height: 3px;
     background: var(--primary-color);
 }
-/* Projects Section Styles */
-.projects-filter {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-    gap: 10px;
-}
 
-.filter-btn {
-    padding: 8px 20px;
-    border: none;
-    border-radius: 30px;
-    background-color: #f0f0f0;
-    color: var(--text-color);
-    font-weight: 500;
-    cursor: pointer;
-    transition: var(--transition);
-}
-
-.filter-btn.active, .filter-btn:hover {
-    background-color: var(--primary-color);
-    color: white;
+/* Projects Section */
+.projects {
+    padding: 5rem 0;
+    background: var(--sec-color);
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr); /* 3x3 grid */
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
 .project-card {
-    border-radius: var(--border-radius);
+    background: var(--card-bg);
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: var(--box-shadow);
-    transition: var(--transition);
-    background-color: var(--card-bg);
-}
-.project-card {
-  height: clamp(300px, 40vh, 500px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .project-card:hover {
@@ -697,55 +677,68 @@ nav ul li a:hover::after {
 }
 
 .project-img {
-    height: 200px;
+    position: relative;
     overflow: hidden;
+    height: 250px;
 }
 
 .project-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: var(--transition);
+    transition: transform 0.5s ease;
 }
 
 .project-card:hover .project-img img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .project-content {
-    padding: 20px;
-}
-
-.project-content h3 {
-    margin-bottom: 10px;
-    font-size: 1.3rem;
-}
-
-.project-content p {
-    color: var(--text-light);
-    margin-bottom: 15px;
-    font-size: 0.95rem;
+    padding: 1.5rem;
 }
 
 .project-tech {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 15px;
-    gap: 8px;
+    gap: 0.5rem;
+    margin-top: 1rem;
 }
 
 .project-tech span {
-    font-size: 0.8rem;
-    padding: 4px 10px;
-    border-radius: 20px;
-    background-color: var(--filter-btn-bg);
+    background: var(--accent-color);
     color: var(--text-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
-.project-links {
+/* Projects Filter */
+.projects-filter {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
 }
+
+.filter-btn {
+    background: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--text-color);
+    padding: 0.6rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: var(--accent-color);
+    color: blue;
+}
+
 
 /* Contact Section Styles */
 .contact-content {
@@ -1038,7 +1031,25 @@ footer {
         grid-template-columns: 1fr;
     }
     
+}
+@media (max-width: 1200px) {
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+    
+    .projects-filter {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 200px;
+        text-align: center;
     }
 }
