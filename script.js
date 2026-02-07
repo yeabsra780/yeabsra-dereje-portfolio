@@ -131,7 +131,7 @@ if (contactForm) {
     // Here you would typically send the form data to a server
     // For now, just show an alert
     alert(
-      "Thank you for your message!"
+      "Thank you for your message! In a real website, this would be sent to the server."
     );
 
     // Reset form
